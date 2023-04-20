@@ -1,0 +1,47 @@
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 100px;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+  font-family: "Playfair Display", serif;
+}
+
+p,
+a,
+input,
+button {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.icon {
+  width: 20px;
+}
+
+@media screen and (max-width: 575px) {
+  section {
+    scroll-margin-top: 45px;
+  }
+
+  .icon {
+    width: 15px;
+  }
+}

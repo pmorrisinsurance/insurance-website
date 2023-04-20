@@ -1,0 +1,114 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #5f1a37;
+  min-height: 75vh;
+}
+
+.container hr {
+  display: none;
+}
+
+.biography {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem;
+}
+
+.biography h4 {
+  margin: 0 0 1.5rem 0;
+  font-size: 2.5rem;
+}
+
+.biography p {
+  font-size: 1.5rem;
+}
+
+.profile {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  border: 10px solid #4163e0;
+  border-radius: 50%;
+  background-color: #b2b2b2;
+  width: 250px;
+  height: 250px;
+}
+
+.profile h2 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.profile p {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    /* align-items: flex-start; */
+    margin: 2rem;
+  }
+
+  .biography {
+    margin: 0;
+    width: 100%;
+  }
+
+  .profile {
+    margin: 1.5rem;
+  }
+
+  .profile-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .profile h2,
+  .profile p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    flex-direction: column-reverse;
+    margin: auto;
+    max-width: 575px;
+  }
+
+  .container hr {
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+    border: double 5px #5f1a37;
+    width: 100%;
+  }
+
+  .profile {
+    margin: 1.5rem;
+  }
+
+  .profile p {
+    font-size: 1.25rem;
+  }
+
+  .biography {
+    box-sizing: border-box;
+    width: 350px;
+    margin: 1.5rem auto;
+  }
+
+  .biography h4 {
+    margin: 0;
+  }
+}

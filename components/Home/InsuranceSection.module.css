@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 5rem 5rem;
+}
+
+.container h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #5f1a37;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.container p {
+  font-size: 1.3rem;
+  color: #5f1a37;
+  text-align: center;
+  margin: 0;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards h4 {
+  margin: 0;
+}
+
+.cards p {
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 4rem 1rem;
+  }
+
+  .container h2 {
+    padding: 0;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+}
